@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="信念依旧,个人博客,web前端,前端博客">
+    <meta name="description" content="WEB前端工程师——信念依旧的自学之路，个人博客知识笔记与心得记录">
+    <meta name="author" content="信念依旧">
+    <title>信念依旧点滴小记</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/blog.css" type="text/css">
+    <style>
+        @media only screen and (max-width:1024px) {
+            #music {
+                right: 20px;
+                bottom: 20%;
+            }
+        }
+        
+        p {
+            text-indent: 0!important;
+        }
+    </style>
+    <!--[if lte IE 9]>
+    <script type="text/javascript">
+        window.location = "http://www.xiaoyuezhang.com/error.html"
+    </script>
+    <![endif]-->
+    <!-- xiaoyuezhang.com Baidu tongji analytics -->
+    <!-- <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?f87e415f9d1f6111b1d34c5f96927d9b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script> -->
+</head>
+
+<body>
+    <div class="content">
+        <div class=" container">
+            <div id="music">
+                <img src="images/music.png" alt="音乐">
+                <audio id="myAudio" autoplay loop hidden="true">
+                <source src="许飞 - 父亲写的散文诗(时光版).mp3" type="audio/mpeg">
+                <!-- <source src="media/bm.ogg" type="audio/ogg"> -->
+                Your browser does not support the audio element.
+            </audio>
+            </div>
+
+            <div id="top">
+                <img src="images/top.png" alt="回到顶部">
+            </div>
+            <div class="header-box">
+                <img src="images/header.jpg" alt="我的头像">
+            </div>
+            <div class="center">
+                <p class="myid">信念依旧</p>
+            </div>
+            <div class="my-sort center">
+                <a href="javascript:;">简历</a>
+                <a href="javascript:;">点滴</a>
+                <a href="javascript:;">留言</a>
+            </div>
+            <div id="article">
+                <div class="my-artical">
+                    <div class="articals">
+                        <div class="dotts"></div>
+                        <a class="my-date" href="/artical/hideScroll.html">
+                            <span class="trig"></span>
+                            <span class="dates">2016.07.30</span>
+                        </a>
+                        <div class="ar-container">
+                            <div class="my-line"></div>
+                            <div class="ar-content">
+                                <p class="art-title"><a href="/artical/hideScroll.html">去掉丑丑的滚动条 div仍然能滚动</a></p>
+                                <div class="col-md-4 col-xs-9 art-img">
+                                    <img src="images/s2.jpg" alt="文章配图">
+                                </div>
+                                <div class="col-md-6 col-xs-10 art-detail">
+                                    <p>工作的时候容易遇到这种情况：页面某一区域需要滚动，但并不想浏览器自带的滚动条出现,而各个浏览器的滚动条各不相同，宽度、颜色都不统一。为了美观，优化这些风格不一的滚动条 也是前端工作中必须要做的事~
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-artical">
+                <div class="articals" style="min-height: 3em;">
+                    <div class="dotts"></div>
+                </div>
+            </div>
+            <p class="center beian">© 信念依旧 | <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action">蜀ICP备16004270号</a></p>
+        </div>
+    </div>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            //头像淡入
+            $(".header-box").addClass("fadein");
+
+            //回到顶部
+            $("#top").click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 700);
+            });
+            showScroll();
+            var min_height = document.documentElement.clientHeight / 2;
+
+            function showScroll() {
+                $(window).scroll(function() {
+                    var s = $(window).scrollTop();
+                    s > min_height ? $('#top').fadeIn() : $('#top').fadeOut();
+                });
+            }
+
+            //音乐关闭
+            $("#music").bind("click", function() {
+                $(this).toggleClass("pause");
+                var audio = $("#music audio")[0];
+                if (audio.paused) {
+                    audio.play(); //audio.play();// 这个就是播放
+                } else {
+                    audio.pause(); // 这个就是暂停
+                }
+            });
+        });
+    </script>
+    <!-- <script>
+        (function() {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            } else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script> -->
+    <script src="js/blog.js"></script>
+</body>
+
+</html>

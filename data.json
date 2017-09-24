@@ -1,0 +1,27 @@
+{   
+    "data":[
+        {
+            "title":"此blog创建于看完一部电影而想找个地方记录",
+            "date":"2017-09-24",
+            "image":"images/s1.jpg",
+            "details":"最近忙着找实习的事情，似乎学习的进度放慢了许多~很不该的~昨晚在贴吧看到一个短视频，激起了今天看一场电影的热情，废话不说了，片名《巴霍巴利王》分上下两部，一次性看完--5个小时呀~~看的很刺激，完全忘记了时间。优酷链接放上第一部：http://v.youku.com/v_show/id_XMjc3OTAxNjY2OA==.html?spm=a2h0k.8191407.0.0&from=s1.8-1-1.2第二部：终章--http://v.youku.com/v_show/id_XMjk1MzI2OTQ5Ng==.html?spm=a2h0k.8191407.0.0&from=s1.8-1-1.2&f=50179778"
+        },
+        {
+            "title":"去掉丑丑的滚动条,div仍然能滚动",
+            "date":"2017-09-24",
+            "image":"images/s2.jpg",
+            "details":"工作的时候容易遇到这种情况：页面某一区域需要滚动，但并不想浏览器自带的滚动条出现,而各个浏览器的滚动条各不相同，宽度、颜色都不统一。为了美观，优化这些风格不一的滚动条 也是前端工作中必须要做的事~"
+        },
+        {
+            "title":"接触的第一个demo",
+            "date":"2017-09-24",
+            "image":"images/s3.jpg",
+            "details":"从我零开始接触前端，学的第一个特效就是banner轮播。js语言和c语言有很多相似之处，所以真是庆幸大学有好好考计算机二级呀。。汗！ 初级小白通过自己一点一点摸索，总算写出了这个自适应大小的banner轮播图，可以无缝轮播，并自适应屏幕大小按比例缩小图片。…"
+        },
+        {
+            "title":"this is a title",
+            "date":"2017-09-24",
+            "image":"none",
+            "details":"this is a test intro,this is a test intro,this is a test intro,this is a test intro,this is a test intro,this is a test intro,"
+        }]
+}            
